@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +58,8 @@
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -83,25 +86,33 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section"
+      style="background-image: url('assets/img/fondo.png'); background-size: cover; background-position: center; padding: 100px 0; position: relative;">
 
-      <div class="container">
+      <!-- Capa semi-transparente sobre la imagen para mejor contraste -->
+      <div class="hero-overlay"
+        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 1;">
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2;">
         <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1>Grow your business with Vesperr</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"></a>
-            </div>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-white">
+            <h1 style="font-size: 3rem; font-weight: bold; color: white;">AVANTE MACHINERY</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; color: white;">
+              AVANTE MACHINERY ES UNA EMPRESA DEDICADA A OFRECER PRODUCTOS Y SERVICIOS RELACIONADOS CON LA
+              INFRAESTRUCTURA Y MAQUINARIA FERROVIARIA, BUSCANDO SIEMPRE LOS MAS ALTOS ESTANDARES DE CALIDAD PARA
+              OFRECER A SUS CLIENTES UN SERVICIO EFICAZ.</p>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            <!-- No es necesario incluir la imagen aquí ya que está de fondo -->
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <!-- /Hero Section  a1ba3a   
+    
+    anterior 3498db-->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
@@ -148,9 +159,12 @@
           <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
             <h3>Especialistas en infraestructura y maquinaria ferroviaria.</h3>
             <p>
-              En Avante Machinery nos destacamos por ofrecer un excelente servicio relacionado con el desarrollo e implementación de un Mantenimiento productivo total. Nuestro compromiso con el cliente se basa en cuatro áreas fundamentales.
+              En Avante Machinery nos destacamos por ofrecer un excelente servicio relacionado con el desarrollo e
+              implementación de un Mantenimiento productivo total. Nuestro compromiso con el cliente se basa en cuatro
+              áreas fundamentales.
             </p>
-            <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About us</span> <i class="bi bi-chevron-right"></i></a>
+            <a href="#" class="about-btn align-self-center align-self-xl-start"><span>About us</span> <i
+                class="bi bi-chevron-right"></i></a>
           </div>
 
           <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
@@ -190,68 +204,33 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
+    <section id="stats" class="stats section" style="padding: 80px 0;">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 align-items-center">
-
-          <div class="col-lg-5">
-            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+          <!-- Imagen de la izquierda -->
+          <div class="col-lg-6" style="display: flex; justify-content: center;">
+            <img src="assets/img/stats-img.svg" alt="Stats Image" class="img-fluid"
+              style="max-width: 100%; height: auto;">
           </div>
-
-          <div class="col-lg-7">
-
+          <!-- Contenido de la derecha -->
+          <div class="col-lg-6">
             <div class="row gy-4">
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-headset flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-people flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
+              <div class="content col-xl-12 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
+                <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; margin-bottom: 20px;">Misión y Visión</h3>
+                <p style="font-size: 1.1rem; color: #555; line-height: 1.7; margin-bottom: 30px;">
+                  Buscamos los niveles más altos de Calidad en nuestros Productos y Servicios a nuestros Clientes,
+                  apoyándolos con nuestro Trabajo y Experiencia.
+                </p>
+                <p style="font-size: 1.1rem; color: #555; line-height: 1.7; margin-bottom: 30px;">
+                  Nuestra Visión es lograr en cada Empresa que nos
+                  brinda la Oportunidad de servirles; colaborar en el desarrollo e Implementación de un Mantenimiento
+                  Productivo en sus Áreas de Operación y Mantenimiento de equipo ferroviario.
+                </p>
+              </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Stats Section -->
 
     <!-- Services Section -->
@@ -260,7 +239,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Nuestros Servicios</h2>
-        <p>En AVANTE MACHINERY nos caracterizamos por ofrecer servicios con la más alta calidad y los mejores estándares de atención al cliente, ya que nuestro principal compromiso es su entera satisfacción. Somos distribuidores autorizados de remolcadores ferroviarios de la marca Rail King en el Norte del país.</p>
+        <p>En AVANTE MACHINERY nos caracterizamos por ofrecer servicios con la más alta calidad y los mejores estándares
+          de atención al cliente, ya que nuestro principal compromiso es su entera satisfacción. Somos distribuidores
+          autorizados de remolcadores ferroviarios de la marca Rail King en el Norte del país.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -322,7 +303,8 @@
                 <a href="service-details.html" class="stretched-link">
                   <h3>Nesciunt Mete</h3>
                 </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
+                  perferendis.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -336,7 +318,8 @@
                 <a href="service-details.html" class="stretched-link">
                   <h3>Eosle Commodi</h3>
                 </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
+                  nesciunt dolorem.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -350,7 +333,8 @@
                 <a href="service-details.html" class="stretched-link">
                   <h3>Ledo Markt</h3>
                 </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
+                  eos earum corrupti.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -364,7 +348,8 @@
                 <a href="service-details.html" class="stretched-link">
                   <h3>Asperiores Commodit</h3>
                 </a>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident
+                  adipisci neque.</p>
                 <a href="service-details.html" class="stretched-link"></a>
               </div>
             </div>
@@ -525,11 +510,13 @@
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                      Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -543,11 +530,13 @@
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
+                      malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -561,11 +550,13 @@
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
+                      minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -579,11 +570,14 @@
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
+                      velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                      veniam.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -597,11 +591,14 @@
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
+                      enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                      cillum quid.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -645,8 +642,10 @@
                 <div class="portfolio-info">
                   <h4>App 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -657,8 +656,11 @@
                 <div class="portfolio-info">
                   <h4>Product 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -669,8 +671,11 @@
                 <div class="portfolio-info">
                   <h4>Branding 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -681,8 +686,10 @@
                 <div class="portfolio-info">
                   <h4>Books 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -693,8 +700,10 @@
                 <div class="portfolio-info">
                   <h4>App 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -705,8 +714,11 @@
                 <div class="portfolio-info">
                   <h4>Product 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -717,8 +729,11 @@
                 <div class="portfolio-info">
                   <h4>Branding 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -729,8 +744,10 @@
                 <div class="portfolio-info">
                   <h4>Books 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -741,8 +758,10 @@
                 <div class="portfolio-info">
                   <h4>App 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -753,8 +772,11 @@
                 <div class="portfolio-info">
                   <h4>Product 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3"
+                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -765,8 +787,11 @@
                 <div class="portfolio-info">
                   <h4>Branding 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2"
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -777,8 +802,10 @@
                 <div class="portfolio-info">
                   <h4>Books 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -946,8 +973,89 @@
 
     </section><!-- /Pricing Section -->
 
-    <!--- Vista Ejemplos de Trabajos Correctivos en Maquinaria Pesada -->
-    <div id="trabajos_correctivos"></div>
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5 d-flex">
+            <i class="bi bi-question-circle"></i>
+            <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
+              Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5 d-flex">
+            <i class="bi bi-question-circle"></i>
+            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
+              ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+              ullamcorper dignissim.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-5 d-flex">
+            <i class="bi bi-question-circle"></i>
+            <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum
+              integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt.
+              Lectus urna duis convallis convallis tellus.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-5 d-flex">
+            <i class="bi bi-question-circle"></i>
+            <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim.
+              Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt
+              pariatur error doloribus fuga.
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5 d-flex">
+            <i class="bi bi-question-circle"></i>
+            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel
+              risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida
+              quis blandit turpis cursus in
+            </p>
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+      </div>
+
+    </section><!-- /Faq Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -990,7 +1098,8 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -1053,7 +1162,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
